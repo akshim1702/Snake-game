@@ -2,10 +2,10 @@
 // constant
 
 let inputDir = { x: 0, y: 0 };
-let foodSound = new Audio('/music/eating.wav');
-let gameOverSound = new Audio('/music/gameover.wav');
-let moveSound = new Audio('/music/move.mp3');
-let musicSound = new Audio('/music/music.mp3');
+let foodSound = new Audio('https://drive.google.com/file/d/11miV28zkXD-pmF662NOlTrGX7VHplULb/view?usp=sharing');
+let gameOverSound = new Audio('https://drive.google.com/file/d/1MvXk90M2_bONJcbco355t3GMSjNbU55G/view?usp=sharing');
+let moveSound = new Audio('https://drive.google.com/file/d/15PcylAdzVf9QjryB50gocoCqyctycpX-/view?usp=sharing');
+let musicSound = new Audio('https://drive.google.com/file/d/1jaTi4J6oLclr5eXG-_T467EjRNjz5vy5/view?usp=sharing');
 musicSound.volume = 0.2;
 let speed = 5;
 let score = 0;
@@ -18,9 +18,9 @@ let food = { x: 6, y: 7 };
 // game functions
 
 function main(ctime) {
-    // musicSound.play();
+   
     window.requestAnimationFrame(main);
-    // console.log(ctime);
+
     if ((ctime - lastPaintTime) / 1000 < 1 / speed) {
         return;
     }
@@ -146,22 +146,22 @@ window.addEventListener('keydown', e => {
     moveSound.play();
     switch (e.key) {
         case "ArrowUp":
-            console.log("ArrowUp");
+            // console.log("ArrowUp");
             inputDir.x = 0;
             inputDir.y = -1;
             break;
         case "ArrowDown":
-            console.log("ArrowDown");
+            // console.log("ArrowDown");
             inputDir.x = 0;
             inputDir.y = 1;
             break;
         case "ArrowRight":
-            console.log("ArrowRight");
+            // console.log("ArrowRight");
             inputDir.x = 1;
             inputDir.y = 0;
             break;
         case "ArrowLeft":
-            console.log("ArrowLeft");
+            // console.log("ArrowLeft");
             inputDir.x = -1;
             inputDir.y = 0;
             break;
