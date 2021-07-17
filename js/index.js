@@ -2,10 +2,10 @@
 // constant
 
 let inputDir = { x: 0, y: 0 };
-let foodSound = new Audio('https://drive.google.com/file/d/11miV28zkXD-pmF662NOlTrGX7VHplULb/view?usp=sharing');
-let gameOverSound = new Audio('https://drive.google.com/file/d/1MvXk90M2_bONJcbco355t3GMSjNbU55G/view?usp=sharing');
-let moveSound = new Audio('https://drive.google.com/file/d/15PcylAdzVf9QjryB50gocoCqyctycpX-/view?usp=sharing');
-let musicSound = new Audio('https://drive.google.com/file/d/1jaTi4J6oLclr5eXG-_T467EjRNjz5vy5/view?usp=sharing');
+let foodSound = new Audio('../music/eating.wav');
+let gameOverSound = new Audio('../music/gameover.wav');
+let moveSound = new Audio('../music/move.mp3');
+let musicSound = new Audio('../music/music.mp3');
 musicSound.volume = 0.2;
 let speed = 5;
 let score = 0;
