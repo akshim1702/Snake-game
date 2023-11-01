@@ -2,7 +2,7 @@
 // constant
 
 let inputDir = { x: 0, y: 0 };
-let foodSound = new Audio('../music/eating.wav');
+let foodSound = new Audio('https://github.com/akshim1702/Snake-game/blob/main/music/eating.wav');
 let gameOverSound = new Audio('../music/gameover.wav');
 let moveSound = new Audio('../music/move.mp3');
 let musicSound = new Audio('../music/music.mp3');
